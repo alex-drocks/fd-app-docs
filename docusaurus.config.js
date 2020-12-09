@@ -1,83 +1,92 @@
 module.exports = {
-  title: 'Documentation Finance D',
-  tagline: 'Tenue de livres simplifiée',
+  title: 'Documentation de Finance D',
+  tagline: 'Maîtiser le logiciel: Tenue de livres simplifiée',
   url: 'https://docs.finance-d.com/tenue-de-livres-simplifiée',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'Finance D', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'fd-app-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Finance D',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Documentation',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          to: 'blog',
+          label: 'Articles',
+          position: 'left'
         },
+        // {
+        //   href: 'https://github.com/facebook/docusaurus',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Installation',
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
+              label: 'Factures de revenus',
               to: 'docs/doc2/',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Liens',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/Finance.D.Logiciels',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'YouTube',
+              href: 'https://www.youtube.com/channel/UCM4xW0oOsg6q73KA1emMJsg',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Autres formations',
           items: [
             {
-              label: 'Blog',
+              label: 'Articles',
               to: 'blog',
             },
+          ],
+        },
+        {
+          title: 'Finance D',
+          items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Obtenir le logiciel',
+              href: 'https://finance-d.com',
+            },
+            {
+              label: 'À propos',
+              href: 'https://finance-d.com/a-propos',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Finance D.`,
     },
   },
   presets: [
@@ -88,13 +97,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/alex-drocks/fd-app-docs/tree/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/alex-drocks/fd-app-docs/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

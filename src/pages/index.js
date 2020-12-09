@@ -18,7 +18,7 @@ const features = [
     ),
   },
   {
-    title: 'Facturez vos clients',
+    title: 'Facturation client',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
@@ -27,12 +27,11 @@ const features = [
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Suivi des dépenses',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Saisissez vos dépenses.
       </>
     ),
   },
@@ -58,8 +57,9 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Maîtrisez le logiciel: Tenue de livres simplifiée.
+      Apprenez les trucs pour être le plus efficaces possible avec Finance D.">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -71,7 +71,7 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              Commencez ici
             </Link>
           </div>
         </div>
