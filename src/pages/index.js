@@ -3,37 +3,42 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.css';
+
+// unique style sheet for Home page
+import styles from './pages.module.css';
 
 // My components
 import NoWrap from "../Components/NoWrap";
 
+// Array of features to parse with a React loop
 const features = [
   {
-    title: 'Facile à utiliser',
+    title: 'Documentation du logiciel',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Le logiciel <NoWrap>Finance D</NoWrap> - Tenue de livres simplifiée a été conçu pour
-        être simple et efficace.
+        Aprennez comment utiliser le logiciel <NoWrap>Finance D</NoWrap> - Tenue de livres simplifiée
+        en consultant notre documentation officielle.
       </>
     ),
   },
   {
-    title: 'Facturation client',
+    title: 'Formations vidéos et articles',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        La gestion de vos factures de revenus est idéale pour les petites entreprises.
+        Gagnez en productivité en découvrant les meilleures pratiques
+        avec le logiciel <NoWrap>Finance D</NoWrap> avec des tutoriels
+        spécialisés.
       </>
     ),
   },
   {
-    title: 'Suivi des dépenses',
+    title: 'FAQ',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Saisissez vos dépenses.
+        Trouvez des réponses aux interrogations les plus fréquentes dans notre foire aux questions (F.A.Q.).
       </>
     ),
   },
@@ -60,13 +65,15 @@ function Home() {
       title={`Accueil`} // appears as Accueil | {siteName}
       description="Maîtrisez le logiciel: Finance D - Tenue de livres simplifiée.
       Obtenez de l'aide et apprenez les trucs pour être le plus efficace possible
-      avec le logiciel Finance D." //injected in meta description
+      avec le logiciel Finance D. Documentation, aide et formations." //injected in meta description
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title no-word-break">Apprendre <NoWrap>Finance D</NoWrap></h1>
+          <h1 className="hero__title no-word-break">
+            Formations <NoWrap>Finance D</NoWrap>
+          </h1>
           <p className="hero__subtitle no-word-break">
-            Maîtrisez le logiciel: <NoWrap>Finance D</NoWrap> - Tenue de livres simplifiée
+            Maîtrisez le logiciel: Tenue de livres simplifiée
           </p>
           <div className={styles.buttons}>
             <Link

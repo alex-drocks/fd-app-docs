@@ -12,6 +12,16 @@
   overflow: hidden;
 }
 
+.getStarted {
+  background-color: white !important;
+  color: black !important;
+  text-transform: uppercase;
+}
+.getStarted:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
 @media screen and (max-width: 996px){
   .feature {
     text-align: center;

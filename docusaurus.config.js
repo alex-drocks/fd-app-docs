@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Apprendre Finance D",
-  tagline: 'Maîtiser le logiciel: Finance D - Tenue de livres simplifiée',
+  title: "Finance D - Documentation, aide et formations",
+  tagline: 'Maîtriser le logiciel: Finance D - Tenue de livres simplifiée',
   url: 'https://docs.finance-d.com',
   baseUrl: '/logiciel-tenue-de-livres-simplifiee/',
   onBrokenLinks: 'warn',
@@ -9,14 +9,13 @@ module.exports = {
   organizationName: 'Finance D', // Usually your GitHub org/user name.
   projectName: 'fd-app-docs', // Usually your repo name.
   themeConfig: {
-    // announcementBar: {
-    //   id: 'support_us', // Any value that will identify this message.
-    //   content:
-    //     'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
-    //   backgroundColor: '#fafbfc', // Defaults to `#fff`.
-    //   textColor: '#091E42', // Defaults to `#000`.
-    //   isCloseable: false, // Defaults to `true`.
-    // },
+    announcementBar: {
+      id: 'beta_mode', // Any value that will identify this message.
+      content:
+        'Notre site de documentation est en construction.',
+      textColor: '#666', // Defaults to `#000`.
+      isCloseable: false, // Defaults to `true`.
+    },
     navbar: {
       title: 'Finance D',
       logo: {
@@ -35,31 +34,31 @@ module.exports = {
           label: 'Articles',
           position: 'left'
         },
-        // {
-        //   href: 'https://github.com/facebook/docusaurus',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+        {
+          to: 'faq',
+          label: 'FAQ',
+          position: 'right',
+        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Documentation',
+          title: 'Accès rapide',
           items: [
             {
-              label: 'Installation',
-              to: 'docs/',
+              label: 'Installation du logiciel',
+              to: 'docs/installation',
             },
             {
-              label: 'Factures de revenus',
-              to: 'docs/doc2/',
+              label: 'Créer une facture',
+              to: 'docs/mdx/',
             },
           ],
         },
         {
-          title: 'Liens',
+          title: 'Plus',
           items: [
             {
               label: 'Facebook',
@@ -84,11 +83,11 @@ module.exports = {
           title: 'Finance D',
           items: [
             {
-              label: 'Obtenir le logiciel',
+              label: 'Présentation du logiciel',
               href: 'https://finance-d.com',
             },
             {
-              label: 'À propos',
+              label: 'À propos de nous',
               href: 'https://finance-d.com/a-propos',
             },
           ],
@@ -106,18 +105,26 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        // Will be passed to @docusaurus/plugin-content-docs (false to disable)
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/alex-drocks/fd-app-docs/tree/master/',
+          editUrl: 'https://github.com/alex-drocks/fd-app-docs/tree/master/',
         },
+
+        // Will be passed to @docusaurus/plugin-content-blog (false to disable)
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/alex-drocks/fd-app-docs/tree/master/',
+          editUrl: 'https://github.com/alex-drocks/fd-app-docs/tree/master/',
+          blogSidebarTitle: 'Articles récents',
+          blogTitle: 'Articles',
+          blogDescription: 'Lisez nos articles de formations spécialisées pour augmenter ' +
+            'votre productivité avec le logiciel Finance D - Tenue de livres simplifiée.',
         },
+
+        // Will be passed to @docusaurus/plugin-content-pages (false to disable)
+        pages: {},
+
+        // Will be passed to @docusaurus/theme-classic.
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
