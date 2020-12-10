@@ -1,14 +1,22 @@
 module.exports = {
-  title: 'Documentation de Finance D',
-  tagline: 'Maîtiser le logiciel: Tenue de livres simplifiée',
-  url: 'https://docs.finance-d.com/tenue-de-livres-simplifiée',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
+  title: "Apprendre Finance D",
+  tagline: 'Maîtiser le logiciel: Finance D - Tenue de livres simplifiée',
+  url: 'https://docs.finance-d.com',
+  baseUrl: '/logiciel-tenue-de-livres-simplifiee/',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'Finance D', // Usually your GitHub org/user name.
   projectName: 'fd-app-docs', // Usually your repo name.
   themeConfig: {
+    // announcementBar: {
+    //   id: 'support_us', // Any value that will identify this message.
+    //   content:
+    //     'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+    //   backgroundColor: '#fafbfc', // Defaults to `#fff`.
+    //   textColor: '#091E42', // Defaults to `#000`.
+    //   isCloseable: false, // Defaults to `true`.
+    // },
     navbar: {
       title: 'Finance D',
       logo: {
@@ -86,7 +94,12 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Finance D.`,
+      logo: {
+        alt: 'Logo Finance D',
+        src: 'img/logo.png',
+        href: 'https://finance-d.com/',
+      },
+      copyright: `© ${new Date().getFullYear()} Finance D`,
     },
   },
   presets: [

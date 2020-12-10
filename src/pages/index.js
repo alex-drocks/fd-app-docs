@@ -2,9 +2,11 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+
+// My components
+import NoWrap from "../Components/NoWrap";
 
 const features = [
   {
@@ -12,7 +14,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Le logiciel Finance D - Tenue de livres simplifiée a été conçu pour
+        Le logiciel <NoWrap>Finance D</NoWrap> - Tenue de livres simplifiée a été conçu pour
         être simple et efficace.
       </>
     ),
@@ -43,7 +45,7 @@ function Feature({imageUrl, title, description}) {
     <div className={clsx('col col--4', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+          <img className={styles.featureImage} src={imgUrl} alt={title}/>
         </div>
       )}
       <h3>{title}</h3>
@@ -53,17 +55,19 @@ function Feature({imageUrl, title, description}) {
 }
 
 function Home() {
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="Maîtrisez le logiciel: Tenue de livres simplifiée.
-      Apprenez les trucs pour être le plus efficaces possible avec Finance D.">
+      title={`Accueil`} // appears as Accueil | {siteName}
+      description="Maîtrisez le logiciel: Finance D - Tenue de livres simplifiée.
+      Obtenez de l'aide et apprenez les trucs pour être le plus efficace possible
+      avec le logiciel Finance D." //injected in meta description
+    >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <h1 className="hero__title no-word-break">Apprendre <NoWrap>Finance D</NoWrap></h1>
+          <p className="hero__subtitle no-word-break">
+            Maîtrisez le logiciel: <NoWrap>Finance D</NoWrap> - Tenue de livres simplifiée
+          </p>
           <div className={styles.buttons}>
             <Link
               className={clsx(
