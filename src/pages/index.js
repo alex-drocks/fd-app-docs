@@ -18,7 +18,7 @@ const features = [
     description: (
       <>
         Aprennez comment utiliser le logiciel <NoWrap>Finance D</NoWrap> - Tenue de livres simplifiée
-        en consultant notre documentation officielle.
+        en consultant notre <Link to="docs">documentation officielle</Link>.
       </>
     ),
   },
@@ -27,9 +27,10 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Gagnez en productivité en découvrant les meilleures pratiques
-        avec le logiciel <NoWrap>Finance D</NoWrap> avec des tutoriels
-        spécialisés.
+        Gagnez en productivité avec des conseils pratiques pour
+        le logiciel <NoWrap>Finance D</NoWrap> en lisant des <Link to="/blog">articles</Link>{" "}
+        ou en visionnant des <Link to="https://www.youtube.com/channel/UCM4xW0oOsg6q73KA1emMJsg">
+        vidéos YouTube</Link>.
       </>
     ),
   },
@@ -38,7 +39,9 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Trouvez des réponses aux interrogations les plus fréquentes dans notre foire aux questions (F.A.Q.).
+        Trouvez des réponses aux interrogations les plus
+        fréquentes dans notre {" "}
+        <Link to="/faq">foire aux questions (F.A.Q.)</Link>.
       </>
     ),
   },

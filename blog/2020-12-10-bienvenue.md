@@ -8,16 +8,17 @@ author_image_url: https://avatars3.githubusercontent.com/u/69808183?s=460&u=2091
 tags: [nouveau]
 ---
 
-Bienvenue sur la page officielle de la documentation
+Bienvenue sur la documentation
 du logiciel `Finance D - Tenue de livres simplifiée`.
 
 Le contenu est en construction afin de bien vous fournir 
 l'information nécessaire à maîtriser le logiciel.
 
 Bien que Finance D soit un logiciel orienté vers la facilité 
-d'utilsation, nous mettons à votre disposition nos meilleures 
-ressources afin de vous aider à bien accomplir plus de choses 
-et ce, le plus rapidement possible.
+d'utilisation, nous mettons nos meilleures 
+ressources à votre disposition 
+afin de vous aider à travailler le mieux possible
+avec Finance D.
 
-Si vous ne savez pas par où commencer, allez à la section
+Si vous ne savez pas par où commencer, consultez la section
 [FAQ](faq).

@@ -37,7 +37,7 @@ module.exports = {
         {
           to: 'faq',
           label: 'FAQ',
-          position: 'right',
+          position: 'left',
         },
       ],
     },
@@ -61,18 +61,18 @@ module.exports = {
           title: 'Plus',
           items: [
             {
-              label: 'Facebook',
+              label: 'Notre page Facebook',
               href: 'https://www.facebook.com/Finance.D.Logiciels',
-            },
-            {
-              label: 'YouTube',
-              href: 'https://www.youtube.com/channel/UCM4xW0oOsg6q73KA1emMJsg',
             },
           ],
         },
         {
           title: 'Autres formations',
           items: [
+            {
+              label: 'Vidéos YouTube',
+              href: 'https://www.youtube.com/channel/UCM4xW0oOsg6q73KA1emMJsg',
+            },
             {
               label: 'Articles',
               to: 'blog',

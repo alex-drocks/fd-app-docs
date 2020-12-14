@@ -30,14 +30,6 @@ html[data-theme="dark"] {
   --ifm-color-primary-lightest: #b4d9ff;
 }
 
-html[data-theme="light"] .hero--primary {
-  background-color: var(--ifm-color-primary-lightest);
-}
-
-.hero--primary {
-  --ifm-hero-text-color: black;
-}
-
 .hero--primary .button {
   box-shadow: 0 3px 8px var(--ifm-color-primary-darkest);
 }
