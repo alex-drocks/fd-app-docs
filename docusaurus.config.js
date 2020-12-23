@@ -64,6 +64,10 @@ module.exports = {
               label: 'Notre page Facebook',
               href: 'https://www.facebook.com/Finance.D.Logiciels',
             },
+            {
+              label: 'FAQ',
+              to: '/faq',
+            },
           ],
         },
         {
