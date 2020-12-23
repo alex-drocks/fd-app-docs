@@ -9,6 +9,8 @@ module.exports = {
       'bases/nouveau-dossier',
       'bases/ouvrir-dossier',
       'bases/creer-facture-revenus',
+      'bases/imprimer-facture-revenus',
+      'bases/trouver-vos-factures',
     ],
   },
 };
