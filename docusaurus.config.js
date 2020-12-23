@@ -12,7 +12,7 @@ module.exports = {
     announcementBar: {
       id: 'beta_mode', // Any value that will identify this message.
       content:
-        'Notre site de documentation est en construction.',
+        'La documentation est en construction.',
       textColor: '#666', // Defaults to `#000`.
       isCloseable: false, // Defaults to `true`.
     },
@@ -38,6 +38,11 @@ module.exports = {
           to: 'faq',
           label: 'FAQ',
           position: 'left',
+        },
+        {
+          href: 'https://finance-d.com',
+          label: 'Site officiel',
+          position: 'right',
         },
       ],
     },
@@ -135,4 +140,5 @@ module.exports = {
       },
     ],
   ],
+  plugins: ['@docusaurus/plugin-ideal-image'],
 };

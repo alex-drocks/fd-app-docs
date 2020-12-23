@@ -39,7 +39,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Trouvez des réponses aux interrogations les plus
+        Trouvez rapidement des réponses aux interrogations les plus
         fréquentes dans notre {" "}
         <Link to="/faq">foire aux questions (F.A.Q.)</Link>.
       </>
