@@ -1,6 +1,14 @@
 module.exports = {
-  someSidebar: {
-    "Installez le logiciel sur Windows": ['telechargement', 'installation', 'activation'],
-    "Autres": ['mdx'],
+  documentation: {
+    "Installer le logiciel sur Windows": [
+      'installation-windows/telecharger',
+      'installation-windows/installer',
+      'installation-windows/activer'
+    ],
+    "Les bases": [
+      'bases/nouveau-dossier',
+      'bases/ouvrir-dossier',
+      'bases/creer-facture-revenus',
+    ],
   },
 };

@@ -54,11 +54,11 @@ module.exports = {
           items: [
             {
               label: 'Installation du logiciel',
-              to: 'docs/installation',
+              to: 'docs/installation-windows/installer',
             },
             {
-              label: 'Créer une facture',
-              to: 'docs/mdx/',
+              label: 'Créer une facture de revenus',
+              to: 'docs/bases/creer-facture-revenus',
             },
           ],
         },
