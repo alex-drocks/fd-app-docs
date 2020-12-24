@@ -50,6 +50,7 @@ a[class*="footerLogoLink"] {
 .markdown div svg {
   box-shadow: 0 0 9px #e0e0e0;
   border-radius: 8px;
+  padding: 8px;
 }
 
 @media screen and (max-width: 420px) {
