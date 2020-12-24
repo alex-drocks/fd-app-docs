@@ -46,9 +46,9 @@ a[class*="footerLogoLink"] {
   word-wrap: normal;
 }
 
-.markdown div img,
-.markdown div svg {
-  box-shadow: 0 0 9px #e0e0e0;
+.markdown div > img,
+.markdown div > svg {
+  box-shadow: 0 0 6px 1px #dedede;
 }
 
 @media screen and (max-width: 420px) {
