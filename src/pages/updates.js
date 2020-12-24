@@ -54,7 +54,7 @@ export default function Faq() {
         <VersionUpdateRow>
           <VersionUpdateCol>
             <div>
-              <h3>Version 0.9.2</h3>
+              <h3>Version 0.9.3</h3>
               <p>Publiée le 2020-12-24</p>
             </div>
             <div>
