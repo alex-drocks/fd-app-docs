@@ -46,6 +46,12 @@ a[class*="footerLogoLink"] {
   word-wrap: normal;
 }
 
+.markdown div img,
+.markdown div svg {
+  box-shadow: 0 0 9px #e2e2e2;
+  border-radius: 8px;
+}
+
 @media screen and (max-width: 420px) {
   :root {
     --ifm-font-size-base: 115%;

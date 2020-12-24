@@ -117,13 +117,13 @@ module.exports = {
         // Will be passed to @docusaurus/plugin-content-docs (false to disable)
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/alex-drocks/fd-app-docs/tree/master/',
+          editUrl: 'https://github.com/alex-drocks/fd-app-docs/tree/master/', //null would remove it
         },
 
         // Will be passed to @docusaurus/plugin-content-blog (false to disable)
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/alex-drocks/fd-app-docs/tree/master/',
+          editUrl: 'https://github.com/alex-drocks/fd-app-docs/tree/master/', //null would remove it
           blogSidebarTitle: 'Articles récents',
           blogTitle: 'Articles',
           blogDescription: 'Lisez nos articles de formations spécialisées pour augmenter ' +
