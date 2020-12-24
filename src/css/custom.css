@@ -48,7 +48,7 @@ a[class*="footerLogoLink"] {
 
 .markdown div img,
 .markdown div svg {
-  box-shadow: 0 0 9px #e2e2e2;
+  box-shadow: 0 0 9px #e0e0e0;
   border-radius: 8px;
 }
 
