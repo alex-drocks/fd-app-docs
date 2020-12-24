@@ -35,6 +35,11 @@ module.exports = {
           position: 'left'
         },
         {
+          to: 'updates',
+          label: 'Mises à jour',
+          position: 'left'
+        },
+        {
           to: 'faq',
           label: 'FAQ',
           position: 'left',
@@ -57,8 +62,8 @@ module.exports = {
               to: 'docs/installation-windows/installer',
             },
             {
-              label: 'Créer une facture de revenus',
-              to: 'docs/bases/creer-facture-revenus',
+              label: 'Notes de mises à jour',
+              to: 'updates',
             },
           ],
         },
