@@ -59,7 +59,7 @@ module.exports = {
           items: [
             {
               label: 'Installation du logiciel',
-              to: 'docs/installation-windows/installer',
+              to: 'docs/installation/installer',
             },
             {
               label: 'Notes de mises à jour',

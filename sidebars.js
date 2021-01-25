@@ -1,9 +1,10 @@
 module.exports = {
   documentation: {
-    "Installer le logiciel sur Windows": [
-      'installation-windows/telecharger',
-      'installation-windows/installer',
-      'installation-windows/activer'
+    "Installer le logiciel": [
+      'installation/telecharger',
+      'installation/installer-windows',
+      'installation/installer-mac',
+      'installation/activer'
     ],
     "Les bases": [
       'bases/nouveau-dossier',
