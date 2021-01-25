@@ -46,7 +46,7 @@ module.exports = {
         },
         {
           href: 'https://finance-d.com',
-          label: 'Site officiel',
+          label: 'Aller au site officiel',
           position: 'right',
         },
       ],

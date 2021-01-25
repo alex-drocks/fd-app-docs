@@ -75,20 +75,17 @@ export default function Faq() {
               ayant la version Windows 10 et un système
               relativement récent pour une expérience optimale. {" "}
               <Link to="#5">(voir les spécifications minimales requises)</Link>.
+              Toutefois, nous sommes en train de tester la version Mac OS qui est
+              également disponible non-officiellement.
             </p>
           </Question>
           <Question id={4}>
             <h3>Le logiciel est-il compatible avec Mac?</h3>
             <p>
-              Réponse courte: <strong>Non</strong>.<br/>
-              Le {logiciel} n'est pas compatible avec les ordinateurs Mac (Apple),
-              car le temps et l'investissement monétaire à prévoir
-              pour soutenir une version Mac et Windows
-              n'est pas réaliste pour un développeur solo bénévole.
-              Il faudrait posséder un ordinateur Mac pour le développement,
-              ainsi que payer pour des licences
-              de signature de code avec Apple, en plus de s'assurer
-              du bon fonctionnement sur les deux plateformes.
+              Réponse courte: <strong>Oui</strong>, mais en test.<br/>
+              Le {logiciel} est compatible avec les ordinateurs Mac (Apple).
+              Cependant, il a été d'abord conçu pour Windows.
+              La version Mac OS pourrait ne pas fonctionner aussi bien que sur windows pour l'instant.
             </p>
           </Question>
         </QuestionRow>
@@ -98,7 +95,9 @@ export default function Faq() {
             <h3>Spécifications minimales requises pour utiliser le logiciel</h3>
             <p>
               Vous avez besoin d'un ordinateur qui correspond aux spécifications suivantes:<br/>
-              <strong>Système d'exploitation (OS):</strong> Windows (Windows 10 recommandé).<br/>
+              <strong>Système d'exploitation (OS):</strong>
+              Windows (Windows 10 recommandé).<br/>
+              Mac (Mac OS X Catalina recommandé).<br/>
               <strong>Type du système:</strong> Système d'exploitation 64 bits et processeur x64.<br/>
               <strong>Processeur (CPU):</strong> 1 ghz et plus.<br/>
               <strong>Mémoire (RAM):</strong> 275 mo et plus.<br/>
