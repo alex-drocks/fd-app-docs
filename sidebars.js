@@ -1,3 +1,4 @@
+//this is the sidebar for the documentation mdx files
 module.exports = {
   documentation: {
     "Installer le logiciel": [
