@@ -92,7 +92,7 @@ export default function Faq() {
             </li>
           </NewFeatures>
           <Improvements>
-            <li>La fenêtre du votre "Sommaire de taxes" est maintenant plus fidèle au formulaire de
+            <li>La fenêtre de votre "Sommaire de taxes" est maintenant plus fidèle au formulaire de
               déclarations de taxes du gouvernement.
             </li>
             <li>La fenêtre de votre "État des résultats" est maintenant simplifiée, plus claire
