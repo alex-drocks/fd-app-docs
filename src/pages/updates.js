@@ -86,7 +86,7 @@ export default function Faq() {
               toutes les factures ayant le nom modifié afin qu'elles contiennent toutes
               le nouveau nom.
               Par exemple: Si je modifies le nom du client "Alex" pour "Alexandre",
-              toutes mes factures au nom d'Alex deviendront toutes au nom d'Alexandre.
+              toutes mes factures au nom d'Alex deviendront au nom d'Alexandre.
               Ceci évite de perdre le solde dû à cette personne et garde vos factures existantes
               synchronisées avec vos modifications de nom du moment présent.
             </li>
