@@ -8,6 +8,8 @@ import Image from '@theme/IdealImage';
 import v092_sommaireTaxes from '../../static/img/updates/update-sommaire-taxes.png';
 import v092_sommaireTaxes2 from '../../static/img/updates/v092-fenetre-sommaire-taxes.png';
 import v092_boutonAide from '../../static/img/updates/v093-bouton-aide.png';
+import v096_changeFolder from '../../static/img/updates/v096_changeFolder.png';
+import v096_optionsMesPreferences from '../../static/img/updates/v096_optionsMesPreferences.png';
 
 const logiciel = `logiciel "Finance D - Tenue de livres simplifiée"`;
 
@@ -80,6 +82,76 @@ export default function Faq() {
         </div>
       </header>
       <main>
+        <VersionUpdate version={"0.9.6"} date={"2021-02-02"}>
+          <NewFeatures>
+            <li>
+              Un nouvel onglet a été ajouté à la fenêtre d'options pour choisir
+              si vous voulez afficher/cacher les colonnes de TPS / TVQ et ou
+              SOUS-TOTAL / TOTAL dans la table de transactions des factures.
+              Cette option a été ajoutée pour le calcul de taxes amélioré de cette mise à jour.
+              <Image img={v096_optionsMesPreferences}/>
+            </li>
+            <li>
+              Le menu au coin inférieur droit de la fenêtre principale contient
+              maintenant une fonction pour "Changer de dossier" rapidement.
+              Cela vous permet d'ouvrir un autre de vos dossiers
+              de tenue de livres de manière efficace.
+              <Image img={v096_changeFolder}/>
+            </li>
+          </NewFeatures>
+          <Improvements>
+            <li>
+              Calcul de taxes amélioré dans la circonstance où vous utilisez les quantités de ligne.
+              Le montant de TPS et TVQ est maintenant calculé à partir du SOUS-TOTAL
+              plutôt qu'avec le prix à l'unité.
+              Maintenant, les pourcentages sont arrondis à la perfection peu importe
+              la complexité de vos transactions. Merci à Mr. Julien de l'avoir trouvé.
+            </li>
+            <li>
+              Amélioration du nom des fenêtres de Finance D pour bien différencier
+              la fenêtre principale (visible surtout dans la barre de tâches sur Windows).
+            </li>
+            <li>
+              Amélioration de la transition entre la fenêtre d'accueil
+              et la fenêtre principale au niveau de l'initialisation de la base de donnée
+              ainsi que de la première apparition. Il y avait un effet de flash nuisible
+              qui est maintenant réglé par un fade-in rapide.
+            </li>
+            <li>
+              Ajout d'une notification visible dans la pré-visualisation de l'envoi
+              de votre facture au client par courriel.
+              Il n'était pas très évident qu'en mode "manuel",
+              vous devez glisser le fichier PDF dans votre programme de messagerie avant l'envoi.
+              NB: Il existe un mode automatisé avec connexion SMTP plus complexe à paramétrer mais génial.
+            </li>
+            <li>
+              La liste des transactions affectant vos calculs de taxes
+              (dans la fenêtre Sommaire de taxes), a été améliorée pour refléter
+              les changements du correctif de calcul de taxes. De plus, il est possible de faire un
+              double-clic sur une ligne pour afficher la facture d'origine.
+            </li>
+          </Improvements>
+          <BugFixes>
+            <li>
+              Correction du dispositif de mise à jour automatique sur MacOS.
+            </li>
+            <li>
+              Correction de la liste des modèles de factures et de transactions qui
+              n'était pas synchronisée en tout temps selon le mode REVENUS / DÉPENSES actif.
+            </li>
+          </BugFixes>
+          <p>
+            <i>
+              NB: Dû au nouveau calcul de taxes impliquant les quantités,
+              vos factures sont automatiquement converties au bon format.
+              Donc, il se pourrait que l'arrondissement des lignes de transactions
+              ne soit pas identique à ce qui était enregistré avant la version 0.9.6.
+              Par contre, votre total réel n'est pas affecté.
+              Ce changement était nécessaire pour la précision des taxes à long terme.
+            </i>
+          </p>
+        </VersionUpdate>
+
         <VersionUpdate version={"0.9.5"} date={"2021-01-27"}>
           <NewFeatures>
             <li>Modifier le nom d'un client ou d'un fournisseur va maintenant modifier
