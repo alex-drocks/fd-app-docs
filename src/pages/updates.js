@@ -10,6 +10,10 @@ import v092_sommaireTaxes2 from '../../static/img/updates/v092-fenetre-sommaire-
 import v092_boutonAide from '../../static/img/updates/v093-bouton-aide.png';
 import v096_changeFolder from '../../static/img/updates/v096_changeFolder.png';
 import v096_optionsMesPreferences from '../../static/img/updates/v096_optionsMesPreferences.png';
+import v097_imprimerRecherche from '../../static/img/updates/v0.9.7-imprimer-recherche.png';
+import v097_imprimerTransactionsEtatResultats from '../../static/img/updates/v0.9.7-resultats-transactions.png';
+import v097_codeTaxesCanada from '../../static/img/updates/v0.9.7-code-taxes-canada.png';
+import v097_totalFactureNom from '../../static/img/updates/v0.9.7-total-facturé-du-nom..png';
 
 const logiciel = `logiciel "Finance D - Tenue de livres simplifiée"`;
 
@@ -82,6 +86,62 @@ export default function Faq() {
         </div>
       </header>
       <main>
+        <VersionUpdate version={"0.9.7"} date={"2021-02-11"}>
+          <NewFeatures>
+            <li>
+              Ajout de la possibilité d'imprimer les résultats affichés dans la fenêtre "Mes factures".
+              <Image img={v097_imprimerRecherche}/>
+              <br/>
+            </li>
+            <li>
+              Ajout des sommes pour les colonnes TOTAL et SOLDE DÛ dans la fenêtre "Mes factures".
+            </li>
+            <li>
+              Ajout de la possibilité de lister toutes les transactions des factures
+              affichées dans la fenêtre "Mes factures".
+            </li>
+            <li>
+              Ajout de la possibilité d'imprimer les transactions par catégories
+              pour la fenêtre "État des résultats".
+              <Image img={v097_imprimerTransactionsEtatResultats}/>
+              <br/>
+            </li>
+            <li>
+              Ajout de l'ensemble des provinces canadiennes au choix de calcul de taxes selon <a
+              target={"_blank"}
+              href="https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/facturer-percevoir-quel-taux/calculatrice.html">
+              Canada.ca
+            </a>
+              . Vous pouvez maintenant choisir le code taxe des provinces autres que le Québec
+              parmi votre liste de code taxe pour chaque transaction d'une facture.
+              <Image img={v097_codeTaxesCanada}/>
+              <br/>
+            </li>
+            <li>
+              Ajout de la possibilité de cacher la colonne QTÉ (quantité)
+              dans la table de transaction de vos factures pour simplifier la vue au besoin.
+            </li>
+            <li>
+              Ajout de l'information "Total facturé" dans l'éditeur de nom.
+              <Image img={v097_totalFactureNom}/>
+              <br/>
+            </li>
+          </NewFeatures>
+          <Improvements>
+            <li>
+              Toutes les fenêtres qui ont la capacité d'imprimer vont maintenant
+              produire du texte 100% noir au lieu d'utiliser les teintes de gris pâle
+              afin d'assurer que l'impression soit claire sur papier
+              autant qu'à l'écran d'ordinateur.
+            </li>
+            <li>
+              Lorsqu'une ligne de transaction contient un code taxe mais que vous
+              effacez manuellement la TPS et la TVQ, le code taxe va se réinitialiser
+              pour indiquer l'impertinence d'utiliser un code taxe sans valeurs de TPS/TVQ.
+            </li>
+          </Improvements>
+        </VersionUpdate>
+
         <VersionUpdate version={"0.9.6"} date={"2021-02-02"}>
           <NewFeatures>
             <li>
