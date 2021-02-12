@@ -13,7 +13,7 @@ import v096_optionsMesPreferences from '../../static/img/updates/v096_optionsMes
 import v097_imprimerRecherche from '../../static/img/updates/v0.9.7-imprimer-recherche.png';
 import v097_imprimerTransactionsEtatResultats from '../../static/img/updates/v0.9.7-resultats-transactions.png';
 import v097_codeTaxesCanada from '../../static/img/updates/v0.9.7-code-taxes-canada.png';
-import v097_totalFactureNom from '../../static/img/updates/v0.9.7-total-facturé-du-nom.png';
+import v097_totalFactureNom from '../../static/img/updates/v0.9.7-total-facture-du-nom.png';
 
 const logiciel = `logiciel "Finance D - Tenue de livres simplifiée"`;
 
