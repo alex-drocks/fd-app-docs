@@ -13,7 +13,7 @@ import v096_optionsMesPreferences from '../../static/img/updates/v096_optionsMes
 import v097_imprimerRecherche from '../../static/img/updates/v0.9.7-imprimer-recherche.png';
 import v097_imprimerTransactionsEtatResultats from '../../static/img/updates/v0.9.7-resultats-transactions.png';
 import v097_codeTaxesCanada from '../../static/img/updates/v0.9.7-code-taxes-canada.png';
-import v097_totalFactureNom from '../../static/img/updates/v0.9.7-total-facturé-du-nom..png';
+import v097_totalFactureNom from '../../static/img/updates/v0.9.7-total-facturé-du-nom.png';
 
 const logiciel = `logiciel "Finance D - Tenue de livres simplifiée"`;
 
@@ -92,6 +92,7 @@ export default function Faq() {
               Ajout de la possibilité d'imprimer les résultats affichés dans la fenêtre "Mes factures".
               <Image img={v097_imprimerRecherche}/>
               <br/>
+              <br/>
             </li>
             <li>
               Ajout des sommes pour les colonnes TOTAL et SOLDE DÛ dans la fenêtre "Mes factures".
@@ -105,6 +106,7 @@ export default function Faq() {
               pour la fenêtre "État des résultats".
               <Image img={v097_imprimerTransactionsEtatResultats}/>
               <br/>
+              <br/>
             </li>
             <li>
               Ajout de l'ensemble des provinces canadiennes au choix de calcul de taxes selon <a
@@ -116,6 +118,7 @@ export default function Faq() {
               parmi votre liste de code taxe pour chaque transaction d'une facture.
               <Image img={v097_codeTaxesCanada}/>
               <br/>
+              <br/>
             </li>
             <li>
               Ajout de la possibilité de cacher la colonne QTÉ (quantité)
@@ -124,6 +127,7 @@ export default function Faq() {
             <li>
               Ajout de l'information "Total facturé" dans l'éditeur de nom.
               <Image img={v097_totalFactureNom}/>
+              <br/>
               <br/>
             </li>
           </NewFeatures>
