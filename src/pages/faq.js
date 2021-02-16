@@ -75,17 +75,18 @@ export default function Faq() {
               ayant la version Windows 10 et un système
               relativement récent pour une expérience optimale. {" "}
               <Link to="#5">(voir les spécifications minimales requises)</Link>.
-              Toutefois, nous sommes en train de tester la version Mac OS qui est
-              également disponible non-officiellement.
+              Il est également compatible avec les ordinateurs Mac.
+              Nous avons testé la version Mac sur OS X Catalina.
+              Donc, il est recommandé d'avoir un Mac assez récent.
             </p>
           </Question>
           <Question id={4}>
             <h3>Le logiciel est-il compatible avec Mac?</h3>
             <p>
-              Réponse courte: <strong>Oui</strong>, mais en test.<br/>
+              Réponse courte: <strong>Oui</strong>.<br/>
               Le {logiciel} est compatible avec les ordinateurs Mac (Apple).
-              Cependant, il a été d'abord conçu pour Windows.
-              La version Mac OS pourrait ne pas fonctionner aussi bien que sur windows pour l'instant.
+              Cette version a été éprouvé par moins de tests que sur Windows.
+              Or, tout est sensé être fonctionnel à 100%.
             </p>
           </Question>
         </QuestionRow>
