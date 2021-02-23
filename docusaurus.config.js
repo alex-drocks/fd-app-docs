@@ -59,7 +59,7 @@ module.exports = {
           items: [
             {
               label: 'Installation du logiciel',
-              to: 'docs/installation/installer',
+              to: 'docs',
             },
             {
               label: 'Notes de mises à jour',
@@ -113,6 +113,10 @@ module.exports = {
         href: 'https://finance-d.com/',
       },
       copyright: `© ${new Date().getFullYear()} Finance D`,
+    },
+    gtag: {
+      trackingID: 'G-8N37CT6CMQ',
+      anonymizeIP: false,
     },
   },
   presets: [
