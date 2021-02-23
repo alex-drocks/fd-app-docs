@@ -14,29 +14,29 @@ import NoWrap from "../Components/NoWrap";
 const features = [
   {
     title: 'Documentation du logiciel',
-    // imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    imageUrl: 'img/documentation-icon.svg',
     description: (
       <>
-        Aprennez comment utiliser le logiciel <NoWrap>Finance D</NoWrap> - Tenue de livres simplifiée
-        en consultant notre <Link to="docs">documentation officielle</Link>.
+        Apprenez comment mieux utiliser le logiciel <NoWrap>Finance D</NoWrap> - Tenue de livres simplifiée
+        en consultant notre <Link to="docs">documentation</Link>.
       </>
     ),
   },
   {
     title: 'Formations vidéos et articles',
-    // imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: 'img/video-learning-youtube-icon.svg',
     description: (
       <>
         Gagnez en productivité avec des conseils pratiques pour
         le logiciel <NoWrap>Finance D</NoWrap> en lisant des <Link to="/blog">articles</Link>{" "}
         ou en visionnant des <Link to="https://www.youtube.com/channel/UCM4xW0oOsg6q73KA1emMJsg">
-        vidéos YouTube</Link>.
+        tutoriels vidéos YouTube</Link>.
       </>
     ),
   },
   {
-    title: 'FAQ',
-    // imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Foire aux questions (F.A.Q.)',
+    imageUrl: 'img/faq-icon.svg',
     description: (
       <>
         Trouvez rapidement des réponses aux interrogations les plus
