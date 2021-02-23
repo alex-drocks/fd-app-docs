@@ -34,12 +34,6 @@ html[data-theme="dark"] {
   box-shadow: 0 3px 8px var(--ifm-color-primary-darkest);
 }
 
-.featureImage_src-pages- {
-  width: 60px !important;
-  height: 60px !important;
-  padding: 60px 0 15px 0;
-}
-
 .footer__logo {
   max-width: 48px;
 }
