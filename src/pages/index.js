@@ -14,7 +14,7 @@ import NoWrap from "../Components/NoWrap";
 const features = [
   {
     title: 'Documentation du logiciel',
-    imageUrl: 'img/documentation-icon.svg',
+    // imageUrl: 'img/documentation-icon.svg',
     description: (
       <>
         Apprenez comment mieux utiliser le logiciel <NoWrap>Finance D</NoWrap> - Tenue de livres simplifiée
@@ -24,7 +24,7 @@ const features = [
   },
   {
     title: 'Formations vidéos et articles',
-    imageUrl: 'img/video-learning-youtube-icon.svg',
+    // imageUrl: 'img/video-learning-youtube-icon.svg',
     description: (
       <>
         Gagnez en productivité avec des conseils pratiques pour
@@ -36,7 +36,7 @@ const features = [
   },
   {
     title: 'Foire aux questions (F.A.Q.)',
-    imageUrl: 'img/faq-icon.svg',
+    // imageUrl: 'img/faq-icon.svg',
     description: (
       <>
         Trouvez rapidement des réponses aux interrogations les plus
