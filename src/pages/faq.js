@@ -5,29 +5,6 @@ import Link from '@docusaurus/Link';
 import styles from "./pages.module.css";
 import NoWrap from "../Components/NoWrap";
 
-const logiciel = `logiciel "Finance D - Tenue de livres simplifiée"`;
-
-function QuestionRow({children}) {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {children}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Question({children, id}) {
-  return (
-    <div className={clsx('col col--6', styles.feature)}
-         id={id}>
-      {children}
-    </div>
-  );
-}
-
 export default function Faq() {
   return (
     <Layout
@@ -45,6 +22,11 @@ export default function Faq() {
           </p>
         </div>
       </header>
+      <div className="container">
+        <br/>
+        <br/>
+        <h2><a href="https://finance-d.com">Finance&nbsp;D&nbsp;— Tenue de livres simplifiée</a></h2>
+      </div>
       <main>
         <QuestionRow>
           <Question id={1}>
@@ -223,4 +205,28 @@ export default function Faq() {
       </main>
     </Layout>
   )
+}
+
+
+const logiciel = `logiciel "Finance D - Tenue de livres simplifiée"`;
+
+function QuestionRow({children}) {
+  return (
+    <section className={styles.features}>
+      <div className="container">
+        <div className="row">
+          {children}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Question({children, id}) {
+  return (
+    <div className={clsx('col col--6', styles.feature)}
+         id={id}>
+      {children}
+    </div>
+  );
 }

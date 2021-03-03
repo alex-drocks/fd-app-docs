@@ -2,7 +2,6 @@ import React from 'react';
 import clsx from "clsx";
 import Layout from '@theme/Layout';
 import styles from "./pages.module.css";
-import NoWrap from "../Components/NoWrap";
 
 import Image from '@theme/IdealImage';
 import v092_sommaireTaxes from '../../static/img/updates/update-sommaire-taxes.png';
@@ -15,67 +14,14 @@ import v097_imprimerTransactionsEtatResultats from '../../static/img/updates/v0.
 import v097_codeTaxesCanada from '../../static/img/updates/v0.9.7-code-taxes-canada.png';
 import v097_totalFactureNom from '../../static/img/updates/v0.9.7-total-facture-du-nom.png';
 
-const logiciel = `logiciel "Finance D - Tenue de livres simplifiée"`;
 
-function VersionUpdate({version, date, children}) {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          <div className={clsx('col col--12', styles.feature)}>
-            <div>
-              <h3>Version {version}</h3>
-              <p>Publiée le {date}</p>
-            </div>
-            {children}
-            <hr/>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function NewFeatures({children}) {
-  return (
-    <div>
-      <h4>Nouveautés:</h4>
-      <ul>
-        {children}
-      </ul>
-    </div>
-  );
-}
-
-function BugFixes({children}) {
-  return (
-    <div>
-      <h4>Correction de bugs:</h4>
-      <ul>
-        {children}
-      </ul>
-    </div>
-  );
-}
-
-function Improvements({children}) {
-  return (
-    <div>
-      <h4>Améliorations:</h4>
-      <ul>
-        {children}
-      </ul>
-    </div>
-  );
-}
-
-
-export default function Faq() {
+export default function Updates() {
   return (
     <Layout
-      title={`Mises à jour`} // appears as {title} | {siteName}
-      description={`Notes de mises à jour du ${logiciel}.
-      Découvrez les nouveautés et améliorations du logiciel.`} //injected in meta description
+      // appears as {title} | {siteName}
+      title={`Mises à jour`}
+      //injected in meta description
+      description={`Notes de mises à jour du ${logiciel}. Découvrez les nouveautés et améliorations du logiciel.`}
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
@@ -85,6 +31,11 @@ export default function Faq() {
           </p>
         </div>
       </header>
+      <div className="container">
+        <br/>
+        <br/>
+        <h2><a href="https://finance-d.com">Finance&nbsp;D&nbsp;— Tenue de livres simplifiée</a></h2>
+      </div>
       <main>
         <VersionUpdate version={"0.9.7"} date={"2021-02-11"}>
           <NewFeatures>
@@ -332,5 +283,59 @@ export default function Faq() {
         </VersionUpdate>
       </main>
     </Layout>
+  );
+}
+
+const logiciel = `logiciel "Finance D - Tenue de livres simplifiée"`;
+
+function VersionUpdate({version, date, children}) {
+  return (
+    <section className={styles.features}>
+      <div className="container">
+        <div className="row">
+          <div className={clsx('col col--12', styles.feature)}>
+            <div>
+              <h3>Version {version}</h3>
+              <p>Publiée le {date}</p>
+            </div>
+            {children}
+            <hr/>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function NewFeatures({children}) {
+  return (
+    <div>
+      <h4>Nouveautés:</h4>
+      <ul>
+        {children}
+      </ul>
+    </div>
+  );
+}
+
+function BugFixes({children}) {
+  return (
+    <div>
+      <h4>Correction de bugs:</h4>
+      <ul>
+        {children}
+      </ul>
+    </div>
+  );
+}
+
+function Improvements({children}) {
+  return (
+    <div>
+      <h4>Améliorations:</h4>
+      <ul>
+        {children}
+      </ul>
+    </div>
   );
 }

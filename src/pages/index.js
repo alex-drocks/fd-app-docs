@@ -76,7 +76,7 @@ function Home() {
             Formations <NoWrap>Finance D</NoWrap>
           </h1>
           <p className="hero__subtitle no-word-break">
-            Maîtrisez le logiciel: Tenue de livres simplifiée
+            Maîtrisez le logiciel&nbsp;: <a href="https://finance-d.com">Tenue de livres simplifiée</a>
           </p>
           <div className={styles.buttons}>
             <Link

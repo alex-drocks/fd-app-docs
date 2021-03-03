@@ -30,6 +30,16 @@ html[data-theme="dark"] {
   --ifm-color-primary-lightest: #b4d9ff;
 }
 
+.hero--primary .hero__subtitle a:first-of-type {
+  color: #fff;
+  text-decoration: underline #1e8cff;
+}
+
+.hero--primary .hero__subtitle a:first-of-type:hover {
+  color: #fff;
+  text-decoration: underline #fff;
+}
+
 .hero--primary .button {
   box-shadow: 0 3px 8px var(--ifm-color-primary-darkest);
 }
