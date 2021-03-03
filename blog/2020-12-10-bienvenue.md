@@ -8,8 +8,8 @@ author_image_url: https://avatars3.githubusercontent.com/u/69808183?s=460&u=2091
 tags: [nouveau]
 ---
 
-Bienvenue sur la documentation
-du logiciel `Finance D - Tenue de livres simplifiée`.
+Bienvenue sur la documentation du
+[logiciel Finance D - Tenue de livres simplifiée](https://finance-d.com/).
 
 Le contenu est en construction afin de bien vous fournir 
 l'information nécessaire à maîtriser le logiciel.
